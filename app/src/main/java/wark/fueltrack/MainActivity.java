@@ -31,7 +31,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-// Displays all the Entry objects and their total fuel cost through EntryLog, starts CreateEntryActivity when an Entry is to be created or edited, and recieves an Entry object from CreateEntryActivity and puts it in the EntryLog
+// Displays all the Entry objects and their total fuel cost through EntryLog,
+// starts CreateEntryActivity when an Entry is to be created or edited,
+// and recieves an Entry object from CreateEntryActivity and puts it in the EntryLog
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -105,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     // when item in ListView EntryLog is clicked, send entry to CreateEntryActivity
-    private void onItemClick(AdapterView<?> l, View view, int position, long id){
+     public void onItemClick(AdapterView<?> l, View view, int position, long id){
         Intent intentEdit = new Intent(this,CreateEntryActivity.class);
         Entry entry = entries.get(position);
         intentEdit.putExtra(EXTRA_INTENT_TYPE,"edit");

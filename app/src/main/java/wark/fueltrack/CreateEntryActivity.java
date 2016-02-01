@@ -20,7 +20,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
-// Allows the user to input the data that comprises an Entry, creates the Entry, then sends the Entry to MainActivity
+// Allows the user to input the data that comprises an Entry,
+// creates the Entry, then sends the Entry to MainActivity
 
 public class CreateEntryActivity extends AppCompatActivity {
     public final static String EXTRA_INTENT_TYPE = "wark.fueltrack.INTENT_TYPE";
